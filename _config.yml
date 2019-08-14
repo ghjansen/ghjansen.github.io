@@ -1,4 +1,4 @@
-layout: sidebar
+layout: stacked
 style: light
 
 plugins:
@@ -17,7 +17,7 @@ defaults:
       layout: "post"
 
 projects:
-  sort_by: pushed
+  sort_by: stars
   # sort_by options:
   #   - pushed
   #   - stars
@@ -25,34 +25,108 @@ projects:
   exclude:
     archived: false
     forks: true
-    projects:
+    projects: study, pfp, bloom
     # - repo-name
 
-# social_media:
+social_media:
   # behance: your_username
   # dribbble: your_username
   # facebook: your_username
   # hackerrank: your_username
   # instagram: your_username
   # keybase: your_username
-  # linkedin: your_username
+  linkedin: guijansen
   # mastodon: your_username
   # medium: your_username
-  # stackoverflow: your_user_id
+  stackoverflow: 4984392
   # telegram: your_username
-  # twitter: your_username
+  twitter: guilhermejansen
   # unsplash: your_username
   # vk: your_username
   # website: http://your_website_url
   # youtube: your_username
 
 topics:
-  - name: CSS
-    web_url: https://github.com/topics/css
-    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/css/css.png
+  - name: Arduino
+    web_url: https://github.com/topics/arduino
+    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/arduino/arduino.png
 
-  - name: Web design
+  - name: Amazon Web Services
+    web_url: https://github.com/topics/aws
+    image_url: https://raw.githubusercontent.com/github/explore/fbceb94436312b6dacde68d122a5b9c7d11f9524/topics/aws/aws.png
 
-  - name: Sass
-    web_url: https://github.com/topics/sass
-    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/sass/sass.png
+  - name: Bitcoin
+    web_url: https://github.com/topics/bitcoin
+    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/bitcoin/bitcoin.png
+
+  - name: Celluar Automata
+    web_url: https://en.wikipedia.org/wiki/Cellular_automaton
+    image_url: https://avatars2.githubusercontent.com/u/1459428?s=400&v=4
+
+  - name: Cybernetics
+    web_url: https://github.com/topics/cybernetics
+    image_url: https://png.pngtree.com/svg/20161107/242c83499c.svg
+
+  - name: Docker
+    web_url: https://github.com/topics/docker
+    image_url: https://alternative.me/icons/docker-swarm.jpg
+
+  - name: Git
+    web_url: https://github.com/topics/git
+    image_url: https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png
+
+  - name: Java
+    web_url: https://github.com/topics/java
+    image_url: https://pbs.twimg.com/profile_images/954020529391902720/jW4dnFtA.jpg
+
+  - name: Jupyter Notebook
+    web_url: https://github.com/topics/jupyter-notebook
+    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/jupyter-notebook/jupyter-notebook.png
+
+  - name: LaTeX
+    web_url: https://github.com/topics/latex
+    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/latex/latex.png
+
+  - name: Maven
+    web_url: https://github.com/topics/maven
+    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/maven/maven.png
+
+  - name: Linux
+    web_url: https://github.com/topics/linux
+    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/linux/linux.png
+
+  - name: Processing
+    web_url: https://en.wikipedia.org/wiki/Processing_(programming_language)
+    image_url: https://github.com/processing/processing/raw/master/build/shared/lib/icons/pde-128.png
+
+  - name: Python
+    web_url: https://github.com/topics/python
+    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png
+
+  - name: Raspberry Pi
+    web_url: https://github.com/topics/raspberry-pi
+    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/raspberry-pi/raspberry-pi.png
+
+  - name: Self-Reference
+    web_url: https://en.wikipedia.org/wiki/Self-reference
+    image_url: http://egyptian-gods.org/wp-content/uploads/2011/06/Egyptian-Symbol-Ouroboros-300x300.png
+
+  - name: Self-Reproducing Automata
+    web_url: https://en.wikipedia.org/wiki/Von_Neumann_universal_constructor
+    image_url: https://cdn.onlinewebfonts.com/svg/img_493802.png
+
+  - name: Spring Boot
+    web_url: https://github.com/topics/spring-boot
+    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/spring-boot/spring-boot.png
+
+  - name: Tensorflow
+    web_url: https://github.com/topics/tensorflow
+    image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Tensorflow_logo.svg/718px-Tensorflow_logo.svg.png
+
+  - name: Terraform
+    web_url: https://github.com/topics/terraform
+    image_url: https://icinga.com/wp-content/uploads/2015/06/terraform_logo.png
+
+  - name: Ubuntu
+    web_url: https://github.com/topics/ubuntu
+    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/ubuntu/ubuntu.png
