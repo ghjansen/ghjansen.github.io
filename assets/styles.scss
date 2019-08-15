@@ -52,3 +52,29 @@
 .min-height-full {
   min-height: 100vh;
 }
+
+// Messy fix for better appearance of calendar
+#calendar {
+  min-height: 223px;
+  div {
+    div {
+      border: 0px !important;
+      .js-calendar-graph {
+        border: 0px !important;
+        padding-top: 0px !important;
+      }
+      .contrib-footer {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+      }
+      div {
+        div {
+          visibility: hidden;
+          width: 0px;
+          height: 0px;
+        }
+      }
+    }
+  }
+}
