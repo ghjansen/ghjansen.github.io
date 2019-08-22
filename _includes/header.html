@@ -9,6 +9,9 @@
 {% assign posts_total = site.posts | size %}
 
 {% assign user = site.github.owner %}
+{% assign bio1 = "Software Engineer (BSc.CS) with 10+ yrs of experience, " %}
+{% assign bio2 = "strongly influenced by abstraction and creativity. " %}
+{% assign bio3 = "Cybernetics enthusiast." %}
 
 {% if page.path contains '_posts' %}
   {% assign page_title = page.title %}
@@ -23,10 +26,12 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page_title }}</title>
-    <meta name="description" content="{{ meta_description }}" />
+    <!--<meta name="description" content="{{ meta_description }}" />-->
+    <meta name="description" content="{{ bio1 }}{{ bio2 }}{{ bio3 }}" />
     <meta property="og:title" content="{{ user.name }}" />
     <meta property="og:image" content="{{ user.avatar_url }}" />
-    <meta property="og:description" content="{{ meta_description }}" />
+    <!-- <meta property="og:description" content="{{ meta_description }}" /> -->
+    <meta property="og:description" content="{{ bio1 }}{{ bio2 }}{{ bio3 }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="{{ "/assets/styles.css" | relative_url }}" rel="stylesheet" type="text/css">
   </head>
