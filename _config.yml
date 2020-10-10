@@ -15,6 +15,10 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+    scope:
+      path: "assets/img"
+    values:
+      img: "true"
 
 projects:
   sort_by: stars
@@ -47,86 +51,122 @@ social_media:
   # youtube: your_username
 
 topics:
+  - name: 3D Printing
+    web_url: https://en.wikipedia.org/wiki/3D_printing
+    #source: https://clipground.com/images/benchy-clipart-4.jpg
+    image_url: assets/img/benchy-clipart-4.jpg
+
   - name: Arduino
     web_url: https://github.com/topics/arduino
-    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/arduino/arduino.png
+    #source: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/arduino/arduino.png
+    image_url: assets/img/arduino.png
 
   - name: Amazon Web Services
     web_url: https://github.com/topics/aws
-    image_url: https://raw.githubusercontent.com/github/explore/fbceb94436312b6dacde68d122a5b9c7d11f9524/topics/aws/aws.png
+    #source: https://raw.githubusercontent.com/github/explore/fbceb94436312b6dacde68d122a5b9c7d11f9524/topics/aws/aws.png
+    image_url: assets/img/aws.png
 
   - name: Bitcoin
     web_url: https://github.com/topics/bitcoin
-    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/bitcoin/bitcoin.png
+    #source: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/bitcoin/bitcoin.png
+    image_url: assets/img/bitcoin.png
 
   - name: Celluar Automata
     web_url: https://en.wikipedia.org/wiki/Cellular_automaton
-    image_url: https://avatars2.githubusercontent.com/u/1459428?s=400&v=4
+    #source: https://avatars2.githubusercontent.com/u/1459428?s=400&v=4
+    image_url: assets/img/1459428.png
 
   - name: Cybernetics
     web_url: https://github.com/topics/cybernetics
-    image_url: https://png.pngtree.com/svg/20161107/242c83499c.svg
+    #source: https://png.pngtree.com/svg/20161107/242c83499c.svg
+    image_url: assets/img/242c83499c.svg
 
   - name: Docker
     web_url: https://github.com/topics/docker
-    image_url: https://alternative.me/icons/docker-swarm.jpg
+    #source: https://events.docker.com/android-chrome-192x192.png
+    image_url: assets/img/android-chrome-192x192.png
 
   - name: Git
     web_url: https://github.com/topics/git
-    image_url: https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png
+    #source: https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png
+    image_url: assets/img/Git-Icon-1788C.png
 
   - name: Java
     web_url: https://github.com/topics/java
-    image_url: https://pbs.twimg.com/profile_images/954020529391902720/jW4dnFtA.jpg
+    #source: https://www.softexia.com/wp-content/uploads/2017/04/Java-logo.png
+    image_url: assets/img/Java-logo.png
 
   - name: Jupyter Notebook
     web_url: https://github.com/topics/jupyter-notebook
-    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/jupyter-notebook/jupyter-notebook.png
+    #source: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/jupyter-notebook/jupyter-notebook.png
+    image_url: assets/img/jupyter-notebook.png
 
   - name: LaTeX
     web_url: https://github.com/topics/latex
-    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/latex/latex.png
+    #source: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/latex/latex.png
+    image_url: assets/img/latex.png
 
   - name: Maven
     web_url: https://github.com/topics/maven
-    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/maven/maven.png
+    #source: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/maven/maven.png
+    image_url: assets/img/maven.png
+
+  - name: Open Source Software
+    web_url: https://en.wikipedia.org/wiki/Open-source_software
+    #source: https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Open_Source_Initiative_keyhole.svg/1200px-Open_Source_Initiative_keyhole.svg.png
+    image_url: assets/img/Open_Source_Initiative_keyhole.svg.png
+
+  - name: Open Source Hardware
+    web_url: https://en.wikipedia.org/wiki/Open-source_hardware
+    #source: https://www.simracingcoach.com/wp-content/uploads/2015/04/logo_hardware.png
+    image_url: assets/img/logo_hardware.png
 
   - name: Linux
     web_url: https://github.com/topics/linux
-    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/linux/linux.png
+    #source: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/linux/linux.png
+    image_url: assets/img/linux.png
 
   - name: Processing
     web_url: https://en.wikipedia.org/wiki/Processing_(programming_language)
-    image_url: https://github.com/processing/processing/raw/master/build/shared/lib/icons/pde-128.png
+    #source: https://github.com/processing/processing/raw/master/build/shared/lib/icons/pde-128.png
+    image_url: assets/img/pde-128.png
 
   - name: Python
     web_url: https://github.com/topics/python
-    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png
+    #source: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png
+    image_url: assets/img/python.png
 
   - name: Raspberry Pi
     web_url: https://github.com/topics/raspberry-pi
-    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/raspberry-pi/raspberry-pi.png
+    #source: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/raspberry-pi/raspberry-pi.png
+    image_url: assets/img/raspberry-pi.png
 
   - name: Self-Reference
     web_url: https://en.wikipedia.org/wiki/Self-reference
-    image_url: http://egyptian-gods.org/wp-content/uploads/2011/06/Egyptian-Symbol-Ouroboros-300x300.png
+    #source: http://egyptian-gods.org/wp-content/uploads/2011/06/Egyptian-Symbol-Ouroboros-300x300.png
+    image_url: assets/img/Egyptian-Symbol-Ouroboros-300x300.png
 
   - name: Self-Reproducing Automata
     web_url: https://en.wikipedia.org/wiki/Von_Neumann_universal_constructor
-    image_url: https://cdn.onlinewebfonts.com/svg/img_493802.png
+    #source: https://cdn.onlinewebfonts.com/svg/img_493802.png
+    image_url: assets/img/img_493802.png
 
-  - name: Spring Boot
+  - name: Spring Framework
     web_url: https://github.com/topics/spring-boot
-    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/spring-boot/spring-boot.png
+    #source: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/spring-boot/spring-boot.png
+    image_url: assets/img/spring-boot.png
 
   - name: Tensorflow
     web_url: https://github.com/topics/tensorflow
-    image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Tensorflow_logo.svg/718px-Tensorflow_logo.svg.png
+    #source: https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Tensorflow_logo.svg/718px-Tensorflow_logo.svg.png
+    image_url: assets/img/Tensorflow_logo.svg.png
 
   - name: Terraform
     web_url: https://github.com/topics/terraform
-    image_url: https://icinga.com/wp-content/uploads/2015/06/terraform_logo.png
+    #source: https://icinga.com/wp-content/uploads/2015/06/terraform_logo.png
+    image_url: assets/img/terraform_logo.png
 
   - name: Ubuntu
     web_url: https://github.com/topics/ubuntu
-    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/ubuntu/ubuntu.png
+    #source: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/ubuntu/ubuntu.png
+    image_url: assets/img/ubuntu.png
