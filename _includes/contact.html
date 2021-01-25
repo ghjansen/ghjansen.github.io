@@ -1,5 +1,9 @@
 <button onClick="myFunction()" class="d-inline-block f5 rounded-2 text-white bg-green py-1 px-2" style="border: none">{% if user.hireable %}Available for hire{% else %}Contact Me{% endif %}</button>
 
+<!-- reCAPTCHA -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+<!-- form visibility -->
 <script>
 function myFunction() {
   var x = document.getElementById("myDIV");
@@ -11,13 +15,37 @@ function myFunction() {
 }
 </script>
 
-<!-- reCAPTCHA -->
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<!-- captcha -->
+<script>
+function validCaptcha(){
+  var response = grecaptcha.getResponse();
+  if(response.length == 0){
+    // Captcha is not Passed
+    return false;
+  } else {
+    // Captcha is Passed
+    return true;
+  }
+}
+
+function sendButtonCallback() {
+  var btn = document.getElementById("sendButton");
+  if (validCaptcha()) {
+    btn.style.display = "block";
+    btn.disabled = false;
+  } else {
+    btn.style.display = "none";
+    btn.disabled = true;
+  }
+}
+
+
+</script>
 
 <div id="myDIV" style="display:none; width:100%; margin: 0 auto;">
 
-  <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
-action="https://script.google.com/macros/s/AKfycbyAxm1k_P679Apx4QY1BEW4j_XbXhNhBvH5LIKK/exec">
+  <form id="contactform" class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
+action="https://script.google.com/macros/s/AKfycbyAxm1k_P679Apx4QY1BEW4j_XbXhNhBvH5LIKK/exec" onsubmit="return validCaptcha();">
 
   <div class="form-elements">
     <fieldset class="pure-group">
@@ -38,13 +66,14 @@ action="https://script.google.com/macros/s/AKfycbyAxm1k_P679Apx4QY1BEW4j_XbXhNhB
     </fieldset>
 
     <div style="text-align: center;">
-      <div class="form-elements g-recaptcha" data-sitekey="6Le7hjoaAAAAAMtNW-TU7s_GJtsLyVxUXxRXUxBx" style="display: inline-block;"</div>
+      <div class="form-elements g-recaptcha" data-sitekey="6Le7hjoaAAAAAMtNW-TU7s_GJtsLyVxUXxRXUxBx" data-callback="sendButtonCallback()" style="display: inline-block;"</div>
     </div>
 
     <br/>
 
-    <button class="button-success pure-button button-xlarge d-inline-block f5 rounded-2 text-white bg-green py-1 px-2">
+    <button id="sendButton" style="display:none;" disabled class="button-success pure-button button-xlarge d-inline-block f5 rounded-2 text-white bg-green py-1 px-2">
       <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+
   </div>
 
   <div class="thankyou_message" style="display:none; color:#28a745;">
