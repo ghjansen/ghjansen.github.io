@@ -28,7 +28,7 @@ function validCaptcha(){
   }
 }
 
-function sendButtonCallback() {
+function sendButtonCallback(response) {
   var btn = document.getElementById("sendButton");
   if (validCaptcha()) {
     btn.style.display = "block";
@@ -38,8 +38,6 @@ function sendButtonCallback() {
     btn.disabled = true;
   }
 }
-
-
 </script>
 
 <div id="myDIV" style="display:none; width:100%; margin: 0 auto;">
