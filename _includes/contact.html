@@ -10,6 +10,10 @@ function myFunction() {
   }
 }
 </script>
+
+<!-- reCAPTCHA -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 <div id="myDIV" style="display:none; width:100%; margin: 0 auto;">
 
   <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
@@ -32,6 +36,12 @@ action="https://script.google.com/macros/s/AKfycbyAxm1k_P679Apx4QY1BEW4j_XbXhNhB
       <textarea id="message" name="message" rows="10"
       placeholder="Tell me what's on your mind..." style="width:100%"></textarea>
     </fieldset>
+
+    <div style="text-align: center;">
+      <div class="form-elements g-recaptcha" data-sitekey="6Le7hjoaAAAAAMtNW-TU7s_GJtsLyVxUXxRXUxBx" style="display: inline-block;"</div>
+    </div>
+
+    <br/>
 
     <button class="button-success pure-button button-xlarge d-inline-block f5 rounded-2 text-white bg-green py-1 px-2">
       <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
