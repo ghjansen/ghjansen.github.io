@@ -78,9 +78,10 @@
           formElements.style.display = "none"; // hide form
         }
         var thankYouMessage = form.querySelector(".thankyou_message");
+        var buttonavailable = document.getElementById("availableforhire");
         if (thankYouMessage) {
           thankYouMessage.style.display = "block";
-          thankYouMessage.scrollIntoView(true);
+          buttonavailable.scrollIntoView(true);
           thankYouMessage.classList.add("blink");
         }
         return;
