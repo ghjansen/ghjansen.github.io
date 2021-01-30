@@ -1,5 +1,5 @@
 (function() {
-  
+
   // get all data in form and return object
   function getFormData(form) {
     var elements = form.elements;
@@ -25,7 +25,7 @@
     var formData = {};
     fields.forEach(function(name){
       var element = elements[name];
-      
+
       // singular form elements just have one value
       formData[name] = element.value;
 
@@ -80,6 +80,8 @@
         var thankYouMessage = form.querySelector(".thankyou_message");
         if (thankYouMessage) {
           thankYouMessage.style.display = "block";
+          thankYouMessage.scrollIntoView(true);
+          thankYouMessage.classList.add("blink");
         }
         return;
     };
@@ -89,7 +91,7 @@
     }).join('&');
     xhr.send(encoded);
   }
-  
+
   function loaded() {
     console.log("Contact form submission handler loaded successfully.");
     // bind to the submit event of our form

@@ -82,3 +82,17 @@
 .honeypot-field {
   display: none;
 }
+
+.blink {
+  animation: blinker 2s linear;
+  background:white;
+  color:#28a745;
+  font-weight:bold;
+}
+
+@keyframes blinker {
+  50% {
+    background-color: #28a745;
+    color: white;
+  }
+}
