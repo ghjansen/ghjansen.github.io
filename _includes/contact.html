@@ -5,6 +5,8 @@
 
 <!-- form visibility -->
 <script>
+var var1 = "https://script.google.com/macros/s/AKfycbyyBerX6kMEZ61oUrhOzkcRtLgRzhYQk27hY9vfCCMk3ltP8CMgkqgu/exec";
+var var2 = "POST";
 function myFunction() {
   var x = document.getElementById("myDIV");
   if (x.style.display === "none") {
@@ -30,20 +32,24 @@ function validCaptcha(){
 
 function sendButtonCallback(response) {
   var btn = document.getElementById("sendButton");
+  var frm = document.getElementById("contactform");
   if (validCaptcha()) {
     btn.style.display = "block";
     btn.disabled = false;
+    frm.action = var1;
+    frm.method = var2;
   } else {
     btn.style.display = "none";
     btn.disabled = true;
+    frm.action = "?";
+    frm.method = "?";
   }
 }
 </script>
 
 <div id="myDIV" style="display:none; width:100%; margin: 0 auto;">
 
-  <form id="contactform" class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
-action="https://script.google.com/macros/s/AKfycbyAxm1k_P679Apx4QY1BEW4j_XbXhNhBvH5LIKK/exec" onsubmit="return validCaptcha();">
+  <form id="contactform" class="gform pure-form pure-form-stacked" method="?" action="?" onsubmit="return validCaptcha();">
 
   <div class="form-elements">
     <fieldset class="pure-group">
@@ -62,6 +68,11 @@ action="https://script.google.com/macros/s/AKfycbyAxm1k_P679Apx4QY1BEW4j_XbXhNhB
       <textarea id="message" name="message" rows="10"
       placeholder="Tell me what's on your mind..." style="width:100%"></textarea>
     </fieldset>
+
+    <fieldset class="pure-group honeypot-field">
+        <label for="honeypot">Honeypot: </label>
+        <input id="honeypot" type="text" name="honeypot" value="" />
+      </fieldset>
 
     <div style="text-align: center;">
       <div class="form-elements g-recaptcha" data-sitekey="6Le7hjoaAAAAAMtNW-TU7s_GJtsLyVxUXxRXUxBx" data-callback="sendButtonCallback" data-expired-callback="sendButtonCallback" data-error-callback="sendButtonCallback" style="display: inline-block;"></div>
