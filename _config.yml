@@ -29,7 +29,7 @@ projects:
   exclude:
     archived: false
     forks: true
-    projects: study, pfp, bloom
+    projects: study, pfp, bloom, vault
     # - repo-name
 
 social_media:
